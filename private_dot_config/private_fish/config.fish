@@ -36,7 +36,4 @@ if status is-interactive
     # alias
     alias pbcopy='xsel -b -i'
 
-    # chezmoi
-    
-    
 end
