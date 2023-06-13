@@ -1,0 +1,18 @@
+name: main
+on:
+  push:
+    branches:
+    - main
+jobs:
+  main:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Install wget via apt
+        run: apt-get update -y && apt-get install wget -y
+      - name: Install chezmoi
+        run: sh -c "$(wget -qO- get.chezmoi.io)" -- -b /usr/local/bin
+      - name: Setup dotfiles by chezmoi
+        run: chezmoi init https://github.com/owlinux1000/.dotfiles.git
+      - name: Apply dotfiles
+        run: chezmoi apply
+        
