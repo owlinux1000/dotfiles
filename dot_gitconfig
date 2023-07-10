@@ -4,3 +4,5 @@
 	signingkey = 47004903128ADC0EEBE60B67242CFA245C43A431
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true
