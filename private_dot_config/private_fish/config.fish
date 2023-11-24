@@ -26,7 +26,6 @@ if status is-interactive
     # rust
     set -x PATH $HOME/.cargo/bin $PATH
 
-    
     # abbr
     abbr -a -- emacs 'emacs -nw'
     abbr -a -- k 'kubectl'
@@ -34,6 +33,7 @@ if status is-interactive
     abbr -a -- dc 'docker compose'
 
     # alias
-    alias pbcopy='xsel -b -i'
+    alias pbcopy 'xsel -b -i'
+    alias ghidra '/usr/local/src/ghidra/ghidraRun'
 
 end
