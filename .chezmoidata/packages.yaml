@@ -2,11 +2,16 @@ packages:
   darwin:
     brews:
       - 'fish'
+      - 'tmux'
       - 'chezmoi'
       - 'pinentry-mac'
       - 'gnupg'
       - 'terraform'
       - 'eza'
       - 'go'
+      - 'fd'
+      - 'bat'      
     casks:
       - '1password-cli'
+      - 'iterm2'
+      - 'visual-studio-code'
