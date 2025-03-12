@@ -16,5 +16,5 @@ jobs:
       - name: Setup dotfiles by chezmoi
         run: chezmoi init https://github.com/owlinux1000/.dotfiles.git
       - name: Apply dotfiles
-        run: chezmoi apply
+        run: chezmoi apply -n
         
