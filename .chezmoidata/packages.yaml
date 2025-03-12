@@ -6,7 +6,7 @@ packages:
       - 'chezmoi'
       - 'pinentry-mac'
       - 'gnupg'
-      - 'terraform'
+      - 'hashicorp/tap/terraform'
       - 'eza'
       - 'go'
       - 'fd'
@@ -16,3 +16,5 @@ packages:
       - '1password-cli'
       - 'iterm2'
       - 'visual-studio-code'
+    mas:
+      - 
