@@ -1,0 +1,12 @@
+packages:
+  darwin:
+    brews:
+      - 'fish'
+      - 'chezmoi'
+      - 'pinentry-mac'
+      - 'gnupg'
+      - 'terraform'
+      - 'eza'
+      - 'go'
+    casks:
+      - '1password-cli'
