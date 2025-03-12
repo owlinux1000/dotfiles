@@ -10,7 +10,8 @@ packages:
       - 'eza'
       - 'go'
       - 'fd'
-      - 'bat'      
+      - 'bat'
+      - 'terraform'
     casks:
       - '1password-cli'
       - 'iterm2'

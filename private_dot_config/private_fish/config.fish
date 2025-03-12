@@ -1,12 +1,16 @@
 if status is-interactive
+    
     # Ignore greeting
     set fish_greeting
 
     # abbr
-    abbr -a -- emacs 'emacs -nw'
-    abbr -a -- k 'kubectl'
-    abbr -a -- d 'docker'
-    abbr -a -- dc 'docker compose'
+    abbr --add emacs 'emacs -nw'
+    abbr --add k 'kubectl'
+    abbr --add d 'docker'
+    abbr --add dc 'docker compose'
+    abbr --add cat 'bat'
+    abbr --add ls 'eza'
+    abbr --add up 'cd ..'
 
     # alias
     alias pbcopy 'xsel -b -i'
