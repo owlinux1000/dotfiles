@@ -1,17 +1,6 @@
 if status is-interactive
-    
     # Ignore greeting
     set fish_greeting
-
-    set -x PATH /opt/homebrew/bin/ $PATH
-
-    set -x EDITOR "/usr/local/bin/emacs -nw"
-
-    # tfenv
-    set -x PATH $HOME/.tfenv/bin $PATH
-    
-    # rust
-    set -x PATH $HOME/.cargo/bin $PATH
 
     # abbr
     abbr -a -- emacs 'emacs -nw'
@@ -21,4 +10,7 @@ if status is-interactive
 
     # alias
     alias pbcopy 'xsel -b -i'
+
+    source $HOME/.config/fish/path.fish
+    source $HOME/.config/fish/env.fish
 end
