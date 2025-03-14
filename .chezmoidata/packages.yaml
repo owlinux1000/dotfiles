@@ -12,9 +12,11 @@ packages:
       - 'fd'
       - 'bat'
       - 'terraform'
+      - 'tfenv'
     casks:
       - '1password-cli'
       - 'iterm2'
       - 'visual-studio-code'
+      - 'google-cloud-sdk'
     mas:
       - 
