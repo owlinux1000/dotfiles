@@ -14,7 +14,6 @@ jobs:
       - name: Install chezmoi
         run: sudo sh -c "$(wget -qO- get.chezmoi.io)" -- -b /usr/local/bin
       - name: Setup dotfiles by chezmoi
-        run: chezmoi init https://github.com/owlinux1000/.dotfiles.git
+        run: chezmoi init owlinux1000
       - name: Apply dotfiles
-        run: chezmoi apply -n
-        
+        run: chezmoi apply --dry-run
