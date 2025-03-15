@@ -6,12 +6,10 @@ packages:
       - 'chezmoi'
       - 'pinentry-mac'
       - 'gnupg'
-      - 'hashicorp/tap/terraform'
       - 'eza'
       - 'go'
       - 'fd'
       - 'bat'
-      - 'terraform'
       - 'tfenv'
     casks:
       - '1password-cli'
