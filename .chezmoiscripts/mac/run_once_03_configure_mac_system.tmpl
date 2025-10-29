@@ -1,0 +1,18 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/zsh
+# Show extensions in Finder
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Show filepath in Finder
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Eliminate a prefix from the generated filename of screenshots
+defaults write com.apple.screencapture name ""
+
+# Disable the creation of .DS_Store file
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Change the format of battery
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
+{{ end -}}
